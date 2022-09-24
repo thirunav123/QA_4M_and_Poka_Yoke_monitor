@@ -1,0 +1,6 @@
+shiftA_start_time===06:00:00
+shiftB_start_time===14:30:00
+shiftC_start_time===22:30:00
+gui_screen_refresh_time_in_milliseconds===1000
+next_page_move_time_in_miliseconds===6000
+scheduler_delay_in_milliseconds===3000
