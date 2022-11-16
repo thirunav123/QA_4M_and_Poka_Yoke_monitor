@@ -1,0 +1,3451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="name_label_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>211</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;
+background-color: rgb(0, 80, 80);
+color: rgb(255, 255, 255);
+border-radius:10px;
+</string>
+   </property>
+   <property name="text">
+    <string>MAN</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_1">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="logo_label">
+   <property name="geometry">
+    <rect>
+     <x>1275</x>
+     <y>5</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>ZF_Rane.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_time">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 15pt &quot;Arial Black&quot;;
+background-color: None;
+</string>
+   </property>
+   <property name="text">
+    <string>00:00:00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_date">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>161</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 15pt &quot;Arial Black&quot;;
+background-color: None;
+</string>
+   </property>
+   <property name="text">
+    <string>00/00/0000 A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_actual">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>90</y>
+     <width>1111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 85, 0);
+font: 87 19pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>DATES</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>211</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 85, 0);
+font: 87 19pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>4M</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="head_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>1366</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>33</pointsize>
+     <weight>10</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);
+background-color: None;
+font: 87 33pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>4M  Change Management</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>211</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;
+background-color: rgb(0, 80, 80);
+color: rgb(255, 255, 255);
+border-radius:10px;
+</string>
+   </property>
+   <property name="text">
+    <string>MACHINE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>420</y>
+     <width>211</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;
+background-color: rgb(0, 80, 80);
+color: rgb(255, 255, 255);
+border-radius:10px;
+</string>
+   </property>
+   <property name="text">
+    <string>MATERIAL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>560</y>
+     <width>211</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;
+background-color: rgb(0, 80, 80);
+color: rgb(255, 255, 255);
+border-radius:10px;
+</string>
+   </property>
+   <property name="text">
+    <string>METHOD</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_3">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_4">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_5">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_6">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_7">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_9">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_10">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_11">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_12">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_13">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>13</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_14">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_15">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_16">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>140</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_17">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>17</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_18">
+   <property name="geometry">
+    <rect>
+     <x>345</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>18</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_19">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>19</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_20">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_21">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>21</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_22">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>22</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_23">
+   <property name="geometry">
+    <rect>
+     <x>695</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>23</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_24">
+   <property name="geometry">
+    <rect>
+     <x>765</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>24</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_25">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_26">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>26</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_27">
+   <property name="geometry">
+    <rect>
+     <x>975</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>27</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_28">
+   <property name="geometry">
+    <rect>
+     <x>1045</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>28</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_29">
+   <property name="geometry">
+    <rect>
+     <x>1115</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>29</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_30">
+   <property name="geometry">
+    <rect>
+     <x>1185</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>30</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m1_31">
+   <property name="geometry">
+    <rect>
+     <x>1255</x>
+     <y>200</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>31</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_1">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_3">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_4">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_5">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_6">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_7">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_9">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_10">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_11">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_12">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_13">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>13</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_14">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_15">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_16">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>280</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_17">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>17</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_18">
+   <property name="geometry">
+    <rect>
+     <x>345</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>18</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_19">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>19</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_20">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_21">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>21</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_22">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>22</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_23">
+   <property name="geometry">
+    <rect>
+     <x>695</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>23</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_24">
+   <property name="geometry">
+    <rect>
+     <x>765</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>24</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_25">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_26">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>26</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_27">
+   <property name="geometry">
+    <rect>
+     <x>975</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>27</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_28">
+   <property name="geometry">
+    <rect>
+     <x>1045</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>28</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_29">
+   <property name="geometry">
+    <rect>
+     <x>1115</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>29</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_30">
+   <property name="geometry">
+    <rect>
+     <x>1185</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>30</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m2_31">
+   <property name="geometry">
+    <rect>
+     <x>1255</x>
+     <y>340</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>31</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_1">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_3">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_4">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_5">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_6">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_7">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_9">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_10">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_12">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_11">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_14">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_13">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>13</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_15">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_16">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_17">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>17</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_18">
+   <property name="geometry">
+    <rect>
+     <x>345</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>18</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_19">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>19</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_20">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_21">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>21</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_22">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>22</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_23">
+   <property name="geometry">
+    <rect>
+     <x>695</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>23</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_24">
+   <property name="geometry">
+    <rect>
+     <x>765</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>24</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_25">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_26">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>26</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_27">
+   <property name="geometry">
+    <rect>
+     <x>975</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>27</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_28">
+   <property name="geometry">
+    <rect>
+     <x>1045</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>28</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_29">
+   <property name="geometry">
+    <rect>
+     <x>1115</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>29</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_30">
+   <property name="geometry">
+    <rect>
+     <x>1185</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>30</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m3_31">
+   <property name="geometry">
+    <rect>
+     <x>1255</x>
+     <y>480</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>31</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_1">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_3">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_4">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_5">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_6">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_7">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_9">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_10">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_11">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_12">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_13">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>13</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_14">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_15">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_16">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>560</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_17">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>17</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_18">
+   <property name="geometry">
+    <rect>
+     <x>345</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>18</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_19">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>19</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_20">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_21">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>21</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_22">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>22</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_23">
+   <property name="geometry">
+    <rect>
+     <x>695</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>23</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_24">
+   <property name="geometry">
+    <rect>
+     <x>765</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>24</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_25">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_26">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>26</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_27">
+   <property name="geometry">
+    <rect>
+     <x>975</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>27</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_28">
+   <property name="geometry">
+    <rect>
+     <x>1045</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>28</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_29">
+   <property name="geometry">
+    <rect>
+     <x>1115</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>29</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_30">
+   <property name="geometry">
+    <rect>
+     <x>1185</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>30</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_m4_31">
+   <property name="geometry">
+    <rect>
+     <x>1255</x>
+     <y>620</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 25pt &quot;Arial Black&quot;;background-color: green;border-radius:30px;color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>31</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_c_1">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>710</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labe_t_1">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>710</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Not Updated</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_c_2">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>730</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:green;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labe_t_2">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>730</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>No Change</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_c_3">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>710</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labe_t_3">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>710</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Changed</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_c_4">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>730</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(174, 196, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labe_t_4">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>730</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Not Applicable</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_NU">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>710</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_NC">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>730</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_C">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>710</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_NA">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>730</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>name_label_1</zorder>
+  <zorder>pb_m1_1</zorder>
+  <zorder>logo_label</zorder>
+  <zorder>label_date</zorder>
+  <zorder>label_actual</zorder>
+  <zorder>label_line</zorder>
+  <zorder>head_label</zorder>
+  <zorder>name_label_2</zorder>
+  <zorder>name_label_3</zorder>
+  <zorder>name_label_4</zorder>
+  <zorder>pb_m1_2</zorder>
+  <zorder>pb_m1_3</zorder>
+  <zorder>pb_m1_4</zorder>
+  <zorder>pb_m1_5</zorder>
+  <zorder>pb_m1_6</zorder>
+  <zorder>pb_m1_7</zorder>
+  <zorder>pb_m1_8</zorder>
+  <zorder>pb_m1_9</zorder>
+  <zorder>pb_m1_10</zorder>
+  <zorder>pb_m1_11</zorder>
+  <zorder>pb_m1_12</zorder>
+  <zorder>pb_m1_13</zorder>
+  <zorder>pb_m1_14</zorder>
+  <zorder>pb_m1_15</zorder>
+  <zorder>pb_m1_16</zorder>
+  <zorder>pb_m1_17</zorder>
+  <zorder>pb_m1_18</zorder>
+  <zorder>pb_m1_19</zorder>
+  <zorder>pb_m1_20</zorder>
+  <zorder>pb_m1_21</zorder>
+  <zorder>pb_m1_22</zorder>
+  <zorder>pb_m1_23</zorder>
+  <zorder>pb_m1_24</zorder>
+  <zorder>pb_m1_25</zorder>
+  <zorder>pb_m1_26</zorder>
+  <zorder>pb_m1_27</zorder>
+  <zorder>pb_m1_28</zorder>
+  <zorder>pb_m1_29</zorder>
+  <zorder>pb_m1_30</zorder>
+  <zorder>pb_m1_31</zorder>
+  <zorder>pb_m2_1</zorder>
+  <zorder>pb_m2_2</zorder>
+  <zorder>pb_m2_3</zorder>
+  <zorder>pb_m2_4</zorder>
+  <zorder>pb_m2_5</zorder>
+  <zorder>pb_m2_6</zorder>
+  <zorder>pb_m2_7</zorder>
+  <zorder>pb_m2_8</zorder>
+  <zorder>pb_m2_9</zorder>
+  <zorder>pb_m2_10</zorder>
+  <zorder>pb_m2_11</zorder>
+  <zorder>pb_m2_12</zorder>
+  <zorder>pb_m2_13</zorder>
+  <zorder>pb_m2_14</zorder>
+  <zorder>pb_m2_15</zorder>
+  <zorder>pb_m2_16</zorder>
+  <zorder>pb_m2_17</zorder>
+  <zorder>pb_m2_18</zorder>
+  <zorder>pb_m2_19</zorder>
+  <zorder>pb_m2_20</zorder>
+  <zorder>pb_m2_21</zorder>
+  <zorder>pb_m2_22</zorder>
+  <zorder>pb_m2_23</zorder>
+  <zorder>pb_m2_24</zorder>
+  <zorder>pb_m2_25</zorder>
+  <zorder>pb_m2_26</zorder>
+  <zorder>pb_m2_27</zorder>
+  <zorder>pb_m2_28</zorder>
+  <zorder>pb_m2_29</zorder>
+  <zorder>pb_m2_30</zorder>
+  <zorder>pb_m2_31</zorder>
+  <zorder>pb_m3_1</zorder>
+  <zorder>pb_m3_2</zorder>
+  <zorder>pb_m3_3</zorder>
+  <zorder>pb_m3_4</zorder>
+  <zorder>pb_m3_5</zorder>
+  <zorder>pb_m3_6</zorder>
+  <zorder>pb_m3_7</zorder>
+  <zorder>pb_m3_8</zorder>
+  <zorder>pb_m3_9</zorder>
+  <zorder>pb_m3_10</zorder>
+  <zorder>pb_m3_12</zorder>
+  <zorder>pb_m3_11</zorder>
+  <zorder>pb_m3_14</zorder>
+  <zorder>pb_m3_13</zorder>
+  <zorder>pb_m3_15</zorder>
+  <zorder>pb_m3_16</zorder>
+  <zorder>pb_m3_17</zorder>
+  <zorder>pb_m3_18</zorder>
+  <zorder>pb_m3_19</zorder>
+  <zorder>pb_m3_20</zorder>
+  <zorder>pb_m3_21</zorder>
+  <zorder>pb_m3_22</zorder>
+  <zorder>pb_m3_23</zorder>
+  <zorder>pb_m3_24</zorder>
+  <zorder>pb_m3_25</zorder>
+  <zorder>pb_m3_26</zorder>
+  <zorder>pb_m3_27</zorder>
+  <zorder>pb_m3_28</zorder>
+  <zorder>pb_m3_29</zorder>
+  <zorder>pb_m3_30</zorder>
+  <zorder>pb_m3_31</zorder>
+  <zorder>pb_m4_1</zorder>
+  <zorder>pb_m4_2</zorder>
+  <zorder>pb_m4_3</zorder>
+  <zorder>pb_m4_4</zorder>
+  <zorder>pb_m4_5</zorder>
+  <zorder>pb_m4_6</zorder>
+  <zorder>pb_m4_7</zorder>
+  <zorder>pb_m4_8</zorder>
+  <zorder>pb_m4_9</zorder>
+  <zorder>pb_m4_10</zorder>
+  <zorder>pb_m4_11</zorder>
+  <zorder>pb_m4_12</zorder>
+  <zorder>pb_m4_13</zorder>
+  <zorder>pb_m4_14</zorder>
+  <zorder>pb_m4_15</zorder>
+  <zorder>pb_m4_16</zorder>
+  <zorder>pb_m4_17</zorder>
+  <zorder>pb_m4_18</zorder>
+  <zorder>pb_m4_19</zorder>
+  <zorder>pb_m4_20</zorder>
+  <zorder>pb_m4_21</zorder>
+  <zorder>pb_m4_22</zorder>
+  <zorder>pb_m4_23</zorder>
+  <zorder>pb_m4_24</zorder>
+  <zorder>pb_m4_25</zorder>
+  <zorder>pb_m4_26</zorder>
+  <zorder>pb_m4_27</zorder>
+  <zorder>pb_m4_28</zorder>
+  <zorder>pb_m4_29</zorder>
+  <zorder>pb_m4_30</zorder>
+  <zorder>pb_m4_31</zorder>
+  <zorder>label_c_1</zorder>
+  <zorder>labe_t_1</zorder>
+  <zorder>label_c_2</zorder>
+  <zorder>labe_t_2</zorder>
+  <zorder>label_c_3</zorder>
+  <zorder>labe_t_3</zorder>
+  <zorder>label_c_4</zorder>
+  <zorder>labe_t_4</zorder>
+  <zorder>label_time</zorder>
+  <zorder>label_NU</zorder>
+  <zorder>label_NC</zorder>
+  <zorder>label_C</zorder>
+  <zorder>label_NA</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

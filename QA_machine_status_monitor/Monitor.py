@@ -245,7 +245,7 @@ def get_shift(ct):
     startC=datetime.time(C[0],C[1],C[2])
     if startA<=ct<startB:
         return 'A'
-    if startB<=ct<startC:
+    elif startB<=ct<startC:
         return 'B'
     else:
         return 'C'
